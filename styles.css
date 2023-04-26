@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav{
@@ -30,17 +31,17 @@ section.hero{
     padding: 250px 400px;
     background-image: url('./images/people5.jpg');
     background-position: center;
-    font-size: 1.4rem;;
+    font-size: 1.4rem;
 }
 
 section.hero div{
     width: 500px;
+    position: relative;
 }
 
 section.hero div h1{
     font-size: 5rem;
     margin: 20px 0;
-    position: relative;
 }
 
 section.hero div h1::before{
@@ -51,7 +52,7 @@ section.hero div h1::before{
     background-color: yellow;
     right: -80px;
     top: -100px;
-    
+
 }
 
 section.hero div button{
@@ -142,6 +143,16 @@ section.hero div button{
     gap: 30px;
 }
 
+.price .info p{
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+
+.price .info h2{
+    font-size: 3rem;
+}
+
 .price .info button{
     width: 70px;
     height: 70px;
@@ -149,6 +160,9 @@ section.hero div button{
     background-color: yellow;
     border: none;
     outline: none;
+}
+
+.price .info button span{
     font-size: 3rem;
 }
 
@@ -167,6 +181,9 @@ section.hero div button{
 }
 
 .price .about > div > span{
-    font-size: 3rem;
+    font-size: 4rem;
+    width: 70px;
+    height: 70px;
     background-color: yellow;
+    border-radius: 50%;
 }

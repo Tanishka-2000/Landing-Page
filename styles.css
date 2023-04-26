@@ -122,3 +122,51 @@ section.hero div button{
     font-size: 4rem;
     position: absolute;
 }
+/* price section starts */
+
+.price{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.price > div{
+    width: 650px;
+    font-size: 1.2rem;
+}
+
+.price .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.price .info button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+}
+
+.price .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.price .about > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.price .about > div > span{
+    font-size: 3rem;
+    background-color: yellow;
+}

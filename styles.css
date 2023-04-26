@@ -96,3 +96,29 @@ section.hero div button{
     font-weight: 900;
     margin: 40px 0;
 }
+
+/* section agency starts */
+
+.agency{
+    display: flex;
+    position: relative;
+}
+
+.agency > *{
+    flex: 1;
+}
+
+.agency .info{
+    background-color: yellow;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.agency .info h2{
+    font-size: 4rem;
+    position: absolute;
+}

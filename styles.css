@@ -187,3 +187,9 @@ section.hero div button{
     background-color: yellow;
     border-radius: 50%;
 }
+
+/* gallery section starts */
+
+.gallery{
+    display: flex;
+}

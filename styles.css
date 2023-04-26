@@ -37,14 +37,10 @@ section.hero{
 section.hero div{
     width: 500px;
     position: relative;
+    z-index: 5;
 }
 
-section.hero div h1{
-    font-size: 5rem;
-    margin: 20px 0;
-}
-
-section.hero div h1::before{
+section.hero div::before{
     content: "";
     position: absolute;
     width: 200px;
@@ -52,8 +48,14 @@ section.hero div h1::before{
     background-color: yellow;
     right: -80px;
     top: -100px;
-
+    z-index: -1;
 }
+
+section.hero div h1{
+    font-size: 5rem;
+    margin: 20px 0;
+}
+
 
 section.hero div button{
     padding: 10px;
@@ -164,6 +166,7 @@ section.hero div button{
 
 .price .info button span{
     font-size: 3rem;
+
 }
 
 .price .about{
@@ -203,7 +206,7 @@ section.hero div button{
 /* work section starts */
 
 .work{
-    padding: 100px 0;
+    padding: 100px 0 0;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -238,4 +241,15 @@ section.hero div button{
 .clients .info h2{
     font-size: 3rem;
     margin-top: 50px;
+}
+
+/* footer starts */
+
+footer{
+    background-color: yellow;
+    padding: 30px;
+}
+
+footer p{
+    text-align: center;
 }

@@ -9,12 +9,12 @@
 
 nav{
     padding: 10px 200px;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 0 1px 5px #ccc;
     display: flex;
     font-size: 1.5rem;
     position: fixed;
     width: 100%;
+    background-color: rgba(225, 225, 225, .4);
+    z-index: 999;
 }
 
 nav li{
@@ -195,12 +195,23 @@ section.hero div button{
 
 .gallery{
     display: flex;
+    position: relative;
 }
 
 .gallery img{
     width: 50%;
     object-fit: cover;
     object-position: center;
+}
+
+.gallery::after{
+    content: "italy!";
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    bottom: 10px;
+    left: 10px;
 }
 
 /* work section starts */
@@ -240,7 +251,7 @@ section.hero div button{
 
 .clients .info h2{
     font-size: 3rem;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /* footer starts */
